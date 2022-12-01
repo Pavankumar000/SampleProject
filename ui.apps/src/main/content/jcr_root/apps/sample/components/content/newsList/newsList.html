@@ -1,0 +1,9 @@
+
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.NewsList">
+	    <sly data-sly-list.newsListItems="${model.newsListItems}">
+	${newsListItems.year}<br>
+  	${newsListItems.month}<br>
+      	${newsListItems.newsTitle}<br>
+          	${newsListItems.newsContent @context='html'}<br></sly>
+
+</sly>
